@@ -12,6 +12,8 @@
 #
 #    Modified Square's squash_rails for Padrino
 
+require 'squash/ruby'
+
 module Squash
   module Padrino
 
