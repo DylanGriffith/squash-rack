@@ -38,7 +38,7 @@ module Squash
         begin
           result = @app.call(env)
         rescue ::Exception => ex
-          @env['squash.notified'] = ::Squash::Ruby.notify(ex, squash_rack_data(env))
+          env['squash.notified'] = ::Squash::Ruby.notify(ex, squash_rack_data(env))
           raise ex
         end
 
