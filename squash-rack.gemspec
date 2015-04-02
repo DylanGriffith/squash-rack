@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'squash/padrino/version'
+require 'squash/rack/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "squash_padrino"
-  spec.version       = Squash::Padrino::VERSION
+  spec.name          = "squash-rack"
+  spec.version       = Squash::Rack::VERSION
   spec.authors       = ["Dylan Griffith"]
   spec.email         = ["dyl.griffith@gmail.com"]
-  spec.summary       = %q{Integrates [squash](https://github.com/SquareSquash/web) logging into your padrino apps.}
-  spec.description   = %q{Integrates [squash](https://github.com/SquareSquash/web) logging into your padrino apps.}
-  spec.homepage      = "https://github.com/DylanGriffith/squash-padrino"
+  spec.summary       = %q{Integrates [squash](https://github.com/SquareSquash/web) logging into your rack apps.}
+  spec.description   = %q{Integrates [squash](https://github.com/SquareSquash/web) logging into your rack apps.}
+  spec.homepage      = "https://github.com/DylanGriffith/squash-rack"
   spec.licenses      = ["Apache 2.0"]
 
   spec.files         = `git ls-files -z`.split("\x0")
