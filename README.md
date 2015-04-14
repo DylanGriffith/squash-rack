@@ -30,7 +30,7 @@ Squash::Ruby.configure :api_key => 'my_app_api_key',
   :api_host => 'https://my_squash_host',
   :environment => ENV["RACK_ENV"]
 
-class MyApp < Sinatra::Application
+class MyApp < Sinatra::Base
   use Squash::Rack
 end
 ```
